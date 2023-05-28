@@ -193,7 +193,6 @@ C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\bin\Debug\net5.0\HealthyK
 C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\bin\Debug\net5.0\HealthyKitchen.runtimeconfig.json
 C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\bin\Debug\net5.0\HealthyKitchen.runtimeconfig.dev.json
 C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\bin\Debug\net5.0\HealthyKitchen.dll
-C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\bin\Debug\net5.0\ref\HealthyKitchen.dll
 C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\bin\Debug\net5.0\HealthyKitchen.pdb
 C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\bin\Debug\net5.0\HealthyKitchen.Views.dll
 C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\bin\Debug\net5.0\HealthyKitchen.Views.pdb
@@ -370,3 +369,4 @@ C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\obj\Debug\net5.0\HealthyK
 C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\obj\Debug\net5.0\ref\HealthyKitchen.dll
 C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\obj\Debug\net5.0\HealthyKitchen.pdb
 C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\obj\Debug\net5.0\HealthyKitchen.genruntimeconfig.cache
+C:\Users\Poli_\Documents\HealthyKitchen\HealthyKitchen\obj\Debug\net5.0\refint\HealthyKitchen.dll

@@ -36,8 +36,8 @@
         {
             <br />
             <br />
-            <input type="submit" class="btn btn-info" value="Добави в кошницата" &nbsp;&nbsp;&nbsp; /> 	
-            <a class="btn btn-info" value="Finalise" asp-controller="OrderDetails" asp-action="Index">Поръчай</a>
+            <input type="submit" class="btn btn-success" value="Добави в кошницата" &nbsp;&nbsp;&nbsp; /> 	
+            <a class="btn btn-success" value="Finalise" asp-controller="OrderDetails" asp-action="Index">Поръчай</a>
          }
     </div>
 </form>
@@ -46,8 +46,8 @@
 <div>
     @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
      {
-       <a asp-action="Edit" asp-route-id="@Model.Id"><i class="fa fa-2x fa-pencil" aria-hidden="true"></i></a>
-       <a asp-action="Delete" asp-route-id="@Model.Id"><i class="fa fa-2x fa-trash" aria-hidden="true"></i></a>
+        <a asp-action="Edit" asp-route-id="@Model.Id"><i class="fa fa-2x fa-pencil icon-color" aria-hidden="true"></i></a>
+        <a asp-action="Delete" asp-route-id="@Model.Id"><i class="fa fa-2x fa-trash icon-color" aria-hidden="true"></i></a>
      }
-       <a asp-action="Index"><i class="fa fa-2x fa-reply" aria-hidden="true"></i></a>
+    <a asp-action="Index"><i class="fa fa-2x fa-reply icon-color" aria-hidden="true"></i></a>
 </div>
