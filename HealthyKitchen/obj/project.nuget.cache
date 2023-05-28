@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hrqztkR3Iqa49U9vyQxj96flVp31FKubOWtI2V9jI6kDX2XAgxkujNkRmbpV4xCZctpOz4ZLkbRO4FnRTt7Xrw==",
+  "dgSpecHash": "M+9ct/kK+aO4tFdxyRzs4JLX0GFiy+whcEYFZWAEWSDx3hzzlJbX/A2x9deN8kpuE6gngX86mWAugPN0ueosew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Poli_\\OneDrive\\Работен плот\\HealthyKitchen\\HealthyKitchen\\HealthyKitchen.csproj",
+  "projectFilePath": "C:\\Users\\Poli_\\Documents\\HealthyKitchen\\HealthyKitchen\\HealthyKitchen.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Poli_\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Poli_\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.16\\microsoft.aspnetcore.cryptography.internal.5.0.16.nupkg.sha512",
@@ -136,8 +136,7 @@
     "C:\\Users\\Poli_\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Poli_\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Poli_\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Poli_\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Poli_\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+    "C:\\Users\\Poli_\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
