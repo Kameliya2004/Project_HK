@@ -27,7 +27,7 @@
 @foreach (var item in Model)
 {
 <div class="card">
-    <img class="card-img-top" src="~/images/@item.Picture" alt="Card image">
+        <img class="card-img-top img-fluid" src="~/images/@item.Picture" alt="Card image">
     <div class="card-body">
         <h5 class="card-title">
             <a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Title)</a>
