@@ -1,0 +1,48 @@
+﻿@model HealthyKitchen.Data.Product
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Изтриване</h1>
+
+<h3>Сигурни ли сте, че искате да изтриете записа?</h3>
+<div>
+    <h4>Продукт</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Заглавие
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-2">
+           Описание
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            Изображение
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Picture)
+        </dd>
+        <dt class = "col-sm-2">
+            Цена
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-2">
+            Дата на добавяне
+        </dt>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Изтрий" class="btn btn-danger" /> |
+        <a asp-action="Index"><i class="fa fa-2x fa-reply" aria-hidden="true"></i></a>
+    </form>
+</div>

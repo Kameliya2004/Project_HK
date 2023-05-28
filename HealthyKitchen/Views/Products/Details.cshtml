@@ -1,0 +1,53 @@
+﻿@model HealthyKitchen.Models.ProductVM
+@inject SignInManager<User> signInManager;
+@inject UserManager<User> userInManager;
+@using Microsoft.AspNetCore.Identity;
+@using HealthyKitchen.Data;
+
+@{ ViewData["Title"] = "Details"; }
+
+<h1>Детайли</h1>
+
+<form class="row" asp-controller="OrderDetails" asp-action="Create" method="post">
+
+    <div class="col-lg-6 col-12">
+        <div>
+            <img class="card-img-top" src="~/images/@Html.DisplayFor(model => model.Picture)" alt="">
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-12">
+        <div class=" d-flex">
+            <div>
+                <input type="hidden" asp-for="Id" />
+                <input asp-for="Title" class="form-control rounded " readonly />
+                <input asp-for="Price" class="form-control rounded  " readonly />
+            </div>
+        </div>
+
+        <div>
+            <strong class="d-block mt-4 mb-2">Описание</strong>
+            <input asp-for="Description" class="form-control rounded " readonly />
+        </div>
+        <label asp-for="Quantity" class="control-label">Количество</label>
+        <input asp-for="Quantity" type="number" maxlength="4" class="form-control rounded " />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <br />
+            <br />
+            <input type="submit" class="btn btn-info" value="Добави в кошницата" &nbsp;&nbsp;&nbsp; /> 	
+            <a class="btn btn-info" value="Finalise" asp-controller="OrderDetails" asp-action="Index">Поръчай</a>
+         }
+    </div>
+</form>
+
+
+<div>
+    @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+     {
+       <a asp-action="Edit" asp-route-id="@Model.Id"><i class="fa fa-2x fa-pencil" aria-hidden="true"></i></a>
+       <a asp-action="Delete" asp-route-id="@Model.Id"><i class="fa fa-2x fa-trash" aria-hidden="true"></i></a>
+     }
+       <a asp-action="Index"><i class="fa fa-2x fa-reply" aria-hidden="true"></i></a>
+</div>

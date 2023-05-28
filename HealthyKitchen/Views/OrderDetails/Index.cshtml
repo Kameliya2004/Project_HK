@@ -1,0 +1,57 @@
+﻿@model IEnumerable<HealthyKitchen.Data.OrderDetails>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Поръчки</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Номер на поръчка
+            </th>
+            <th>
+                Заглавие
+            </th>
+            <th>
+                Количество
+            </th>
+            <th>
+                Цена
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Order.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Product.Title)
+                </td>
+                <td>
+                    <input type="number" asp-for="@item.Quantity" readonly>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Product.Price)
+                </td>
+
+                @*<td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>*@
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<a class="btn btn-info" asp-action="Calculate" asp-route-orderId="@Model.First().OrderId">Поръчай &nbsp;&nbsp;&nbsp;</a>
+<a asp-controller="Products" asp-action="Index"><i class="fa fa-2x fa-reply" aria-hidden="true"></i></a>
