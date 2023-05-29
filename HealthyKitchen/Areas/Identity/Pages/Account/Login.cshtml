@@ -47,20 +47,22 @@
             </form>
         </section>
     </div>
-    <div class="col-md-6 col-md-offset-2">
+    <div class="col-md-8 col-md-offset-2">
         <section>
             <h4>Очакваме Ви!</h4>
             <hr />
             @{
                 if ((Model.ExternalLogins?.Count ?? 0) == 0)
                 {
-                    <div>
+                    <div class="mx-auto">
                         <p>
                             Влезте отново!
                             Нашият екип Ви очаква!
-                            Възползвайте се от пролетните намаления и следете официалните ни страници, за да участвате в пролетния ни giveaway!!!
+                            Възползвайте се от летните намаления и следете официалните ни страници, за да участвате в пролетния ни giveaway!!!
                         </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vXbFEIrTpg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+
                 }
                 else
                 {

@@ -42,16 +42,10 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Product.Price)
                 </td>
-
-                @*<td>
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                    </td>*@
             </tr>
         }
     </tbody>
 </table>
 <br />
-<a class="btn btn-info" asp-action="Calculate" asp-route-orderId="@Model.First().OrderId">Поръчай &nbsp;&nbsp;&nbsp;</a>
-<a asp-controller="Products" asp-action="Index"><i class="fa fa-2x fa-reply" aria-hidden="true"></i></a>
+<a class="btn btn-success" asp-action="Calculate" asp-route-orderId="@Model.First().OrderId">Поръчай &nbsp;&nbsp;&nbsp;</a>
+<a asp-controller="Products" asp-action="Index"><i class="fa fa-2x fa-reply icon-color" aria-hidden="true"></i></a>
